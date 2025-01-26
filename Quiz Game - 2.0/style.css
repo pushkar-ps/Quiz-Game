@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kanit;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #edf2f4;
+}
+
+#startBody {
+    text-align: center;
+    padding: 30px 0;
+}
+
+#startBody p:nth-child(1) {
+    font-size: 2.9em;
+    font-family: Permanent Marker;
+}
+
+#startBody p {
+    line-height: 40px;
+}
+
+#startBody p:nth-child(2) {
+    font-size: 1.6em;
+    padding-left: 120px;
+}
+
+.startPage {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.startPage button {
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 9px;
+    background: #d90429;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+.startPage button:hover {
+    background: #fa2e46;
+    color: #8d99ae;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all ease .4s;
+}
+
+.bookBox {
+    height: 85vh;
+    width: 70%;
+    background: #000;
+    border-radius: 8px;
+}
+
+#aboutPage button {
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 7px;
+    background: #d90429;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+.bookBox {
+    margin: 0 auto;
+}
+
+#aboutPage{
+    padding: 20px;
+}
+
+
+.landingPage input {
+    height: 35px;
+    width: 250px;
+    font-size: 1.4em;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
+}
+
+.scoreBoard {
+    height: 15vh;
+    /* background: rgb(120, 28, 240); */
+    background: #8d99ae;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+
+.scoreBoard p:nth-child(2) {
+    background: white;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-weight: 600;
+}
+
+.gameBoard {
+    height: 85vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.questionBox {
+    height: 85%;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.37);
+    border: 1px white solid;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: capitalize;
+    font-size: 2.5em;
+}
+
+.ansBtn {
+    width: 70%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.questionBox button {
+    margin: 10px;
+    height: auto;
+    width: 45%;
+    text-transform: capitalize;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    font-size: .8em;
+    cursor: pointer;
+    background: #03071e;
+    color: white;
+}
+
+.questionBox button:hover{
+    background: #8d99ae;
+    color: black;
+    transform: scale(1.1);
+    transition: all ease-out .4s;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="startBody">
+    <p>Quiz Game</p>
+    <p>Pushkar Ps</p>
+    <div class="startPage">
+        <button id="startBtn">Start</button>
+        <button onclick="location.href = '/Game/about.html'">About</button>
+    </div>
+    <script>
+        const startBtn = document.querySelector("#startBtn");
+
+
+        startBtn.addEventListener("click", () => {
+            let person = prompt("Please enter your name");
+
+            if (person) {
+                localStorage.setItem("playerName", person.trim()); // Store player's name
+                location.href = "/Game/game.html"; // Redirect to the game page
+            } else {
+                alert("Name is required to start the game!");
+            }
+        });
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

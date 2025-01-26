@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="/style.css"> <!-- Ensure the path is correct -->
+</head>
+
+<body>
+    <div class="scoreBoard">
+        <div class="scoreBox">
+            <p>Question No.</p>
+            <p id="questionNo">1</p>
+        </div>
+        <div class="scoreBox">
+            <p>Time Left</p>
+            <p id="time">60</p>
+        </div>
+        <div class="scoreBox">
+            <p>Prize Pool</p>
+            <p id="prize">0</p>
+        </div>
+    </div>
+
+    <div class="gameBoard">
+        <div class="questionBox">
+            <p id="question"></p>
+            <div class="ansBtn">
+                <button class="ansButton" id="0"></button>
+                <button class="ansButton" id="1"></button>
+                <button class="ansButton" id="2"></button>
+                <button class="ansButton" id="3"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Use only the main script file -->
+    <script type="module" src="/script.js"></script>
+</body>
+
+</html>
